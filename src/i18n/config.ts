@@ -47,7 +47,8 @@ const ptBR = {
       email: "Email",
       github: "GitHub",
       linkedin: "LinkedIn",
-      rights: "Todos os direitos reservados."
+      rights: "Todos os direitos reservados.",
+      madeWith: "Feito com"
     }
   }
 };
@@ -96,7 +97,8 @@ const en = {
       email: "Email",
       github: "GitHub",
       linkedin: "LinkedIn",
-      rights: "All rights reserved."
+      rights: "All rights reserved.",
+      madeWith: "Made with"
     }
   }
 };

@@ -54,7 +54,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div
-            className="text-xl font-semibold text-portfolio-dark cursor-pointer"
+            className="text-2xl pattaya-regular text-portfolio-dark cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
             {t('hero.name')}
