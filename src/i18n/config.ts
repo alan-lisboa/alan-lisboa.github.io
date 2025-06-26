@@ -17,7 +17,10 @@ const ptBR = {
       name: "Alan Lisboa",
       description: "Designer e desenvolvedor apaixonado por criar experiências digitais excepcionais que conectam pessoas e ideias.",
       viewProjects: "Ver Projetos",
-      contact: "Entre em Contato"
+      contact: "Entre em Contato",
+      developer: "Desenvolvedor",
+      entrepreneur: "Empreendedor",
+      fullstack: "Full Stack"
     },
     about: {
       title: "Sobre mim",
@@ -63,7 +66,10 @@ const en = {
       name: "Alan Lisboa",
       description: "Designer and developer passionate about creating exceptional digital experiences that connect people and ideas.",
       viewProjects: "View Projects",
-      contact: "Get in Touch"
+      contact: "Get in Touch",
+      developer: "Developer",
+      entrepreneur: "Entrepreneur",
+      fullstack: "Full Stack"
     },
     about: {
       title: "About me",
