@@ -1,5 +1,5 @@
 
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
@@ -7,23 +7,23 @@ const ContactSection = () => {
 
   const contactLinks = [
     {
-      icon: Mail,
-      label: "Email",
-      value: "alan.lisboa@outlook.com",
-      href: "mailto:alan.lisboa@outlook.com",
-      color: "text-portfolio-pink"
+      icon: Twitter,
+      label: "X (Twitter)",
+      value: "@alanlisboa",
+      href: "https://x.com/alanlisboa",
+      color: "text-portfolio-teal"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/alan-lisboa",
+      value: "/alan-lisboa",
       href: "https://github.com/alan-lisboa",
       color: "text-portfolio-dark"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/alan-lisboa-silveira",
+      value: "/alan-lisboa-silveira",
       href: "https://linkedin.com/in/alan-lisboa-silveira",
       color: "text-portfolio-blue"
     }
