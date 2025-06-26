@@ -15,7 +15,7 @@ const ptBR = {
     hero: {
       greeting: "Olá, eu sou",
       name: "Alan Lisboa",
-      description: "Designer e desenvolvedor apaixonado por criar experiências digitais excepcionais que conectam pessoas e ideias.",
+      description: "Desenvolvedor apaixonado por criar soluções eficientes, escaláveis e com excelente experiência de uso.",
       viewProjects: "Ver Projetos",
       contact: "Entre em Contato",
       developer: "Desenvolvedor",
@@ -64,7 +64,7 @@ const en = {
     hero: {
       greeting: "Hello, I'm",
       name: "Alan Lisboa",
-      description: "Designer and developer passionate about creating exceptional digital experiences that connect people and ideas.",
+      description: "Developer passionate about creating efficient, scalable solutions with an excellent user experience.",
       viewProjects: "View Projects",
       contact: "Get in Touch",
       developer: "Developer",
