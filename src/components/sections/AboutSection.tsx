@@ -36,7 +36,7 @@ const AboutSection = () => {
           </div>
           <div className="flex flex-wrap gap-3 mt-8">
             {['.NET', 'C#', 'Javascript', 'TypeScript', 'React', 'Java', 'Backend',
-              'Frontend', 'Mobile', 'Software Architecture', 'Message Queue', 'DevOps', 'WebAPI', 'SOA', 'WCF',
+              'Frontend', 'Mobile', 'Desktop', 'Software Architecture', 'Message Queue', 'DevOps', 'WebAPI', 'SOA', 'WCF',
               'jQuery', 'Angular', 'ERP', 'Health'].map((skill) => (
                 <span
                   key={skill}

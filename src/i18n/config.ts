@@ -40,7 +40,21 @@ const ptBR = {
       channels: "Entre em contato comigo através dos canais abaixo.",
       directMessage: "Ou me envie uma mensagem direta",
       writeMessage: "Prefere escrever? Envie um email e retornarei o mais breve possível.",
-      sendEmail: "Enviar Email"
+      sendEmail: "Enviar Email",
+      email: {
+        name: "Nome",
+        nameRequired: "Nome é obrigatório",
+        address: "Email",
+        addressRequired: "Email é obrigatório",
+        addressInvalid: "Email é inválido",
+        message: "Mensagem",
+        messageRequired: "Mensagem é obrigatória",
+        messageInvalid: "Tamanho da mensagem é inválida",
+        sentTitle: "Mensagem enviada!",
+        sentDescription: "Sua mensagem foi enviada e em breve será respondida.",
+        sendErrorTitle: "Problema ao enviar",
+        sendErrorDescription: "Não foi possível enviar a mensagem"
+      }
     },
     footer: {
       tagline: "Transformando ideias em soluções",
@@ -90,7 +104,21 @@ const en = {
       channels: "Contact me through the channels below.",
       directMessage: "Or send me a direct message",
       writeMessage: "Prefer to write? Please send me an email and I will get back to you as soon as possible.",
-      sendEmail: "Send Email"
+      sendEmail: "Send Email",
+      email: {
+        name: "Name",
+        nameRequired: "Name is required",
+        address: "Email",
+        addressRequired: "Email is required",
+        addressInvalid: "Invalid email address",
+        message: "Message",
+        messageRequired: "Message is required",
+        messageInvalid: "Invalid message size",
+        sentTitle: "Sent message!",
+        sentDescription: "Your message was set and will get back to you as soon as possible.",
+        sendErrorTitle: "Problem sending",
+        sendErrorDescription: "Unable to send message"
+      }
     },
     footer: {
       tagline: "Turning ideas into solutions",
