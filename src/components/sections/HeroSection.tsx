@@ -1,19 +1,23 @@
 
 import { useTranslation } from "react-i18next";
 import { ReactTyped } from "react-typed";
+import HeroImage from "../HeroImage";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+
+
   const typedList = [
-    t("hero.name"), t("hero.developer"), t("hero.entrepreneur"), t("hero.fullstack")
+    t("hero.name"), t("hero.developer"), t("hero.fullstack"), t("hero.entrepreneur")
   ]
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-white">
       <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid grid-flow-col grid-cols-3">
 
           <div className="sm:col-span-1 hidden sm:flex">
-            <img src="./avataaars.png" alt="alan" width={280} />
+            <HeroImage />
           </div>
 
           <div className="col-span-3 sm:col-span-2">

@@ -1,21 +1,12 @@
 import { useTranslation } from "react-i18next";
-import {
-  User,
-  AtSign,
-  Github,
-  Linkedin,
-  Twitter,
-  Send,
-  RedoIcon,
-} from "lucide-react";
+import { Github, Linkedin, Twitter, Send } from "lucide-react";
 import { Input } from "../ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
-import Plunk from '@plunk/node';
-import { useToast } from '@/hooks/use-toast';
-import { render } from '@react-email/render';
+import Plunk from "@plunk/node";
+import { useToast } from "@/hooks/use-toast";
 
 interface SendEmailFormData {
   name: string;
@@ -41,7 +32,7 @@ const ContactSection = () => {
       toast({
         title: t("contact.email.sendErrorTitle"),
         description: t("contact.email.sendErrorDescription"),
-        variant: "destructive"
+        variant: "destructive",
       });
       return;
     }
@@ -55,20 +46,20 @@ const ContactSection = () => {
       <span>${data.email}</span><br />
       <span><strong>Message:</strong></span><br />
       <span>${data.message}</span>
-    `
+    `;
 
     const plunk = new Plunk(api_key);
 
     const result = await plunk.emails.send({
-      to: 'alan.lisboa@outlook.com',
+      to: "alan.lisboa@outlook.com",
       subject: `Contact from ${data.name} at alanlisboa.dev`,
-      body: body
+      body: body,
     });
 
     if (result.success) {
       toast({
         title: t("contact.email.sentTitle"),
-        description: t("contact.email.sentDescription")
+        description: t("contact.email.sentDescription"),
       });
     }
   };
@@ -203,7 +194,9 @@ const ContactSection = () => {
                   })}
                 />
                 {errors.message && (
-                  <p className="text-sm text-red-500">{errors.message.message}</p>
+                  <p className="text-sm text-red-500">
+                    {errors.message.message}
+                  </p>
                 )}
               </div>
 
