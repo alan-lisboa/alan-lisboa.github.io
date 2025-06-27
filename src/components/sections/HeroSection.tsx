@@ -10,15 +10,15 @@ const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-white">
       <div className="max-w-6xl mx-auto px-6 py-20">
-
         <div className="grid grid-flow-col grid-cols-3">
-          <div className="col-span-1">
+
+          <div className="sm:col-span-1 hidden sm:flex">
             <img src="./avataaars.png" alt="alan" width={280} />
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-3 sm:col-span-2">
             <div className="text-center animate-fade-in items-center">
-              <h1 className="text-5xl md:text-7xl font-bold text-portfolio-dark mb-6 leading-tight">
+              <h1 className="text-4xl md:text-7xl font-bold text-portfolio-dark mb-6 leading-tight">
                 {t('hero.greeting')}
                 <br />
                 <span className="text-portfolio-blue">

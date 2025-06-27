@@ -13,7 +13,7 @@ const AboutSection = () => {
 
           <div className="grid grid-flow-col md:grid-cols-3 gap-12 items-top">
 
-            <div className="col-span-1">
+            <div className="sm:col-span-1 hidden sm:flex">
               <div className="animate-slide-in">
                 <img src="./alan.jpg" alt="alan" className="rounded-2xl" />
               </div>
