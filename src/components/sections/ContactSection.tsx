@@ -23,7 +23,6 @@ interface SendEmailFormData {
   message: string;
 }
 
-/* https://stackoverflow.com/questions/55795125/how-to-send-email-from-my-react-web-application */
 const ContactSection = () => {
   const { t } = useTranslation();
   const { toast } = useToast();
@@ -47,15 +46,16 @@ const ContactSection = () => {
       return;
     }
 
+    reset();
+
     const body = `
       <span><strong>Name:</strong></span>
       <span>${data.name}</span><br />
       <span><strong>Email:</strong></span>
       <span>${data.email}</span><br />
       <span><strong>Message:</strong></span><br />
-      <span>${data.message}</span>`
-
-    reset();
+      <span>${data.message}</span>
+    `
 
     const plunk = new Plunk(api_key);
 
