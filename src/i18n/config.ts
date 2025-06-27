@@ -49,7 +49,11 @@ const ptBR = {
         addressInvalid: "Email é inválido",
         message: "Mensagem",
         messageRequired: "Mensagem é obrigatória",
-        messageInvalid: "Tamanho da mensagem é inválida"
+        messageInvalid: "Tamanho da mensagem é inválida",
+        sentTitle: "Mensagem enviada!",
+        sentDescription: "Sua mensagem foi enviada e em breve será respondida.",
+        sendErrorTitle: "Problema ao enviar",
+        sendErrorDescription: "Não foi possível enviar a mensagem"
       }
     },
     footer: {
@@ -109,7 +113,11 @@ const en = {
         addressInvalid: "Invalid email address",
         message: "Message",
         messageRequired: "Message is required",
-        messageInvalid: "Invalid message size"
+        messageInvalid: "Invalid message size",
+        sentTitle: "Sent message!",
+        sentDescription: "Your message was set and will get back to you as soon as possible.",
+        sendErrorTitle: "Problem sending",
+        sendErrorDescription: "Unable to send message"
       }
     },
     footer: {

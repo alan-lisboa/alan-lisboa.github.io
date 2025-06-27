@@ -13,6 +13,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { useForm } from "react-hook-form";
+import Plunk from '@plunk/node';
+import { useToast } from '@/hooks/use-toast';
+import { render } from '@react-email/render';
 
 interface SendEmailFormData {
   name: string;
@@ -23,14 +26,52 @@ interface SendEmailFormData {
 /* https://stackoverflow.com/questions/55795125/how-to-send-email-from-my-react-web-application */
 const ContactSection = () => {
   const { t } = useTranslation();
+  const { toast } = useToast();
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<SendEmailFormData>();
 
-  const onSubmit = (data: SendEmailFormData) => { };
+  const onSubmit = async (data: SendEmailFormData) => {
+    let api_key = import.meta.env.VITE_PLUNK_API_KEY;
+
+    if (!api_key) {
+      toast({
+        title: t("contact.email.sendErrorTitle"),
+        description: t("contact.email.sendErrorDescription"),
+        variant: "destructive"
+      });
+      return;
+    }
+
+    const body = `
+      <span><strong>Name:</strong></span>
+      <span>${data.name}</span><br />
+      <span><strong>Email:</strong></span>
+      <span>${data.email}</span><br />
+      <span><strong>Message:</strong></span><br />
+      <span>${data.message}</span>`
+
+    reset();
+
+    const plunk = new Plunk(api_key);
+
+    const result = await plunk.emails.send({
+      to: 'alan.lisboa@outlook.com',
+      subject: `Contact from ${data.name} at alanlisboa.dev`,
+      body: body
+    });
+
+    if (result.success) {
+      toast({
+        title: t("contact.email.sentTitle"),
+        description: t("contact.email.sentDescription")
+      });
+    }
+  };
 
   const contactLinks = [
     {
