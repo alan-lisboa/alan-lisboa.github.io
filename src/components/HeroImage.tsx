@@ -8,9 +8,7 @@ const HeroImage = () => {
     }
 
     return (
-        <div className="rounded-full m-6 w-full bg-slate-100">
-            <img src={getImage()} alt="hero-image" />
-        </div>
+        <img src={getImage()} alt="hero-image" className="rounded-full m-6 bg-slate-200" />
     )
 }
 
