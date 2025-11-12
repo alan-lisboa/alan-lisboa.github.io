@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="https://github.com/alan-lisboa" className="text-gray-300 hover:text-portfolio-blue transition-colors">
               {t('footer.github')}
             </a>
-            <a href="https://linkedin.com/in/alan-lisboa-silveira" className="text-gray-300 hover:text-portfolio-blue transition-colors">
+            <a href="https://linkedin.com/in/alanlisboa" className="text-gray-300 hover:text-portfolio-blue transition-colors">
               {t('footer.linkedin')}
             </a>
           </div>
