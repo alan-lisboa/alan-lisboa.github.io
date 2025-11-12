@@ -83,7 +83,7 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "/alan-lisboa-silveira",
-      href: "https://linkedin.com/in/alan-lisboa-silveira",
+      href: "https://linkedin.com/in/alanlisboa",
       color: "text-portfolio-blue",
     },
   ];
