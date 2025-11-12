@@ -82,7 +82,7 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/alan-lisboa-silveira",
+      value: "/alanlisboa",
       href: "https://linkedin.com/in/alanlisboa",
       color: "text-portfolio-blue",
     },
